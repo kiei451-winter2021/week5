@@ -42,14 +42,26 @@
       <p><em>The rubric below is intended as a guide to a solution. But there are many possible solutions. What ultimately matters is that your application successfully displays the expected/filtered ride data when each button is clicked.</em></p>
       <ol class="list-decimal list-inside">
         <li>(1 point) Add an event listener to the "All Rides" button, so that when it is clicked, there is some output in the console to indicate which button was clicked.</li>
-        <li>(1 point) When the event occurs, request the ride data from our "API", and pass the array of rides to the provided <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function to display all the rides (same as they appeared at the end of last week's assignment).</li>
+        <li>
+          (1 point) When the event occurs:
+          <ol class="list-decimal list-inside ml-8">
+            <li>request the ride data from our "API"</li>
+            <li>pass the array of rides to the provided <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function to display all the rides (same as they appeared at the end of last week's assignment)</li>
+          </ol>
         <li>(2 points) Add an event listener to the "Noober Purple" button, so that when it is clicked, there is some output in the console to indicate which button was clicked.</li>
-        <li>(4 points) When the event occurs, request the ride data from our "API", create a new empty array, loop through the rides and use <span class="bg-orange-100 text-red-400 font-mono p-1">newArray.push(ride)</span> to add rides with the "Noober Purple" level of service into the new array. Pass the new array of filtered rides to the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function.</li>
+        <li>
+          (4 points) When the event occurs:
+          <ol class="list-decimal list-inside ml-8">
+            <li>request the ride data from our "API"</li>
+            <li>create a new empty array</li>
+            <li>loop through the rides and for each ride, use the provided <span class="bg-orange-100 text-red-400 font-mono p-1">levelOfService()</span> function to determine the service level, and use <span class="bg-orange-100 text-red-400 font-mono p-1">newArray.push(ride)</span> to add "Noober Purple" rides into the new array</li>
+            <li>lastly, pass the new array of filtered rides to the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function</li>
+          </ol>
         <li>(2 points) Repeat steps 3 & 4 for the other 3 level of service button filters.</li>
       </ol>
       <h3 class="text-xl font-bold">Optional Challenges</h3>
       <p><em>These are not graded, but if you want to stretch your skills...</em></p>
-      <p>Challenge 1: It would be a nicer UX (User Experience) if when a button is selected, it was clear to the user. In the event listener, remove/add a Tailwind class for the clicked button so that its background color is different than the others. However, make sure to first reset all the buttons to their original background color (or else it will be confusing which button was selected).</p>
+      <p>Challenge 1: It would be a nicer UX (User Experience) if when a button is selected, it was clear to the user. In the event listener, remove/add a Tailwind class for the clicked button so that its background color appears to be active. However, make sure to first reset all the buttons to their original background color (or else it will be confusing which button was selected).</p>
       <!-- <p>Challenge 2: Instead of having the code for 6 individual event listeners (1 for each button), can you refactor the code to use a loop and only write code for 3 event listeners?  Or even just 1?</p> -->
       <p>Challenge 2: Instead of having the code for 5 individual event listeners (1 for each button), can you refactor the code to use a loop and only write code for 2 event listeners?  Or even just 1?</p>
       <h3 class="text-xl font-bold">Guidelines for Submission</h3>
