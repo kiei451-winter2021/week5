@@ -36,13 +36,13 @@
       <p>
         The ride data can be retrieved from our "API" endpoint found at the URL <a href="https://kiei451.com/api/rides.json" class="text-pink-500 underline">https://kiei451.com/api/rides.json</a>.
         The code to render the html of all the rides has already been provided in a <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function.
-        Your job is to add an event listener for each button, and when the event occurs, fetch the data, filter out any undesired rides based on the selected filter, and then call the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function passing an array of the remaining rides as the expected argument.
+        Your job is to add an event listener for each button, and when the event occurs, fetch the data, filter out any undesired rides based on the selected filter, and then call the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function, passing an array of the remaining rides as the expected argument.
       </p>
       <h3 class="text-xl font-bold">Rubric</h3>
       <p><em>The rubric below is intended as a guide to a solution. But there are many possible solutions. What ultimately matters is that your application successfully displays the expected/filtered ride data when each button is clicked.</em></p>
       <ol class="list-decimal list-inside">
         <li>(1 point) Add an event listener to the "All Rides" button, so that when it is clicked, there is some output in the console to indicate which button was clicked.</li>
-        <li>(1 point) When the event occurs, request the ride data from our "API", and pass the array of rides to the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function to display all the rides (same as they appeared at the end of last week's assignment).</li>
+        <li>(1 point) When the event occurs, request the ride data from our "API", and pass the array of rides to the provided <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function to display all the rides (same as they appeared at the end of last week's assignment).</li>
         <li>(2 points) Add an event listener to the "Noober Purple" button, so that when it is clicked, there is some output in the console to indicate which button was clicked.</li>
         <li>(4 points) When the event occurs, request the ride data from our "API", create a new empty array, loop through the rides and use <span class="bg-orange-100 text-red-400 font-mono p-1">newArray.push(ride)</span> to add rides with the "Noober Purple" level of service into the new array. Pass the new array of filtered rides to the <span class="bg-orange-100 text-red-400 font-mono p-1">renderRides()</span> function.</li>
         <li>(2 points) Repeat steps 3 & 4 for the other 3 level of service button filters.</li>
